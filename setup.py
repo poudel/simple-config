@@ -9,7 +9,7 @@ with open(os.path.join('README.md'), 'r') as f:
 
 setup(
     name='simple-config',
-    version='1.0.0',
+    version='1.0.1',
     description='A simple configuration file manager for python',
     long_description=long_description,
     author='keshaB Paudel',

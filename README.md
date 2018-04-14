@@ -85,3 +85,8 @@ Go to the root of this project and run:
 ```python
 python -m unittest discover
 ```
+
+
+## Similar projects
+
+* [yapconf](https://github.com/loganasherjones/yapconf)

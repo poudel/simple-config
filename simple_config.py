@@ -23,7 +23,7 @@ class Config:
 
         if not os.path.exists(self.path):
             with open(self.path, "w") as buff:
-                buff.write(json.dumps(self.defaults))
+                buff.write(json.dumps(self.defaults, sort_keys=True, indent=4))
 
         with open(self.path, "r") as buff:
             self.config = json.loads(buff.read())
@@ -35,7 +35,7 @@ class Config:
         self.config.update(**kwargs)
 
         with open(self.path, "w") as buff:
-            buff.write(json.dumps(self.config))
+            buff.write(json.dumps(self.config, sort_keys=True, indent=4))
         return self.config
 
     def __getattr__(self, name):
